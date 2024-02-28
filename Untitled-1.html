@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="styles.css">
   <title>Phethiso's Project</title> 
 
     <style>
@@ -110,6 +111,175 @@ body {
             margin: 0 10px; /* Add some spacing between list items */
         }
         
+/* Universal Styles */
+html {
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #F2F2F2;  
+  text-align: center;  
+}
+
+h1 {
+  padding: 20px;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+
+}
+
+h2 {
+  padding: 40px 20px 0 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  font-size: 14px;
+
+}
+
+.header li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.header a {
+  color: #4A4A4A;
+}
+
+a.home {
+  color: #4D00FF;
+}
+
+
+/* Banner Section */
+.banner {
+  margin-top: 74px;
+  padding: 40px 0 100px 0;
+  background-color: #4D00FF;
+}
+
+.banner p {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: #ffffff;
+
+}
+
+
+/* Editorial Sections */
+.editorial {
+  padding-bottom: 40px;
+  color: #717171;
+
+}
+
+/* Font Card Sections */
+.font-card {
+  padding: 10px 0 40px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.font-card .creator {
+  padding: 10px 20px;
+  font-size: 16px;
+  
+}
+
+.sample {
+  display: inline-block;  
+  padding: 5px 40px;
+}
+
+.sample .text {
+  color: #4D00FF;
+  font-size: 100px;
+}
+
+.garamond {
+  font-family: Garamond;
+}
+
+.helvetica {
+  font-family: Helvetica;
+}
+
+  
+
+.bold {
+  font-weight: 900;
+}
+
+.regular {
+  font-weight: normal;
+}
+
+.italic {
+  font-weight: normal;
+  font-style: italic;
+}
+
+ 
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition:  0.3s ease-in-out;
+}
+
+.button:hover {
+  background: linear-gradient(45deg, #2ecc71, #3498db);
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  display: inline-block;
+  font-size: 24px;
+  background: linear-gradient(45deg, #ff8a00, #e52e71, #3498db, #2ecc71, #ff8a00);
+  background-size: 200% 200%;
+  color: transparent;
+  background-clip: text;
+  animation: rainbow 4s linear infinite;
+}
     </style>
 <body>
         </style>
@@ -132,8 +302,8 @@ body {
 <p style="color: purple; font-size: x-large;">In the school we are thaught how to code stuff like web pages, games and other things</p>
 <p style="color: purple; font-size: x-large;">And another thing that is good about it is that its not only in one country, its in many countrys!</p>
 <p style="color: black; font-size: x-large;">So fill free to come and check it out!</p>
-<a style="color: rgb(196, 0, 196); background-color: darkblue; font-size: large; border-radius: 100px; padding: 25px;" href="https://impactschool.org.ls" class="button ">Visit Impact School and check it out!</a>
-<h2 style="color: black;">Chapter 2</h2>
+<a href="https://impactschool.org.ls/" class="button" style="border-radius: 50px; padding: 20px;">Visit Impact School and check it out!</a>
+<h2 style="color: black; font-size: xx-large;">Chapter 2</h2>
 <p style="color:blue ; font-size: x-large;">As a kid we will always wonder how we are going to be when we grow up.</p>
 <img style="border-radius: 300px;" src="https://th.bing.com/th/id/OIP.5zLqu25CGLTl9T7sKYsBSwAAAA?w=360&h=480&rs=1&pid=ImgDetMain" width="600px" height="600px" ><p style="font-size: xx-large; float: right; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"></p><img style="border-radius: 300px; margin-right: 10p;" src="https://th.bing.com/th/id/OIP.Bzvsy9h3khMt3OGDOpPeDQAAAA?rs=1&pid=ImgDetMain" width="600px" height="600px">
 <p style="font-size: larger;">Or what car we are going to own</p>
@@ -152,17 +322,17 @@ body {
     
     
     
-    <div class="city">
+    <div style="width: 1800px;" class="city">
     <h2>In First Grade</h2>
     <p style="font-size: x-large;">As a kid I always wanted to be a policeman but my freinds always told me the disadvantage of being a policeman, one of them said"his dad died being a policemn".Let me tell you something you should never care of what your freinds say, or anyone, if you want to do something do it!</p>
     </div> 
     
-    <div class="city">
+    <div style="width: 1800px;" class="city">
     <h2>In Fourth Grade</h2>
     <p style="font-size: x-large;">In the fourth grade I wanted to be a cartoon maker because my brother and my freinds brother wanted to start an anime.And I have three official ideas so far so good.</p>
     </div>
     
-    <div class="city">
+    <div style="width: 1800px;" class="city">
     <h2>In Sixth Grade</h2>
     <p style="font-size: x-large;">In sixth grade I got interested in being a music artist and in being a soccer player.If you're wodering who is my favorite soccer player honestly I could say Cristiano Ronaldo.</p>
     </div>
@@ -176,7 +346,7 @@ body {
 <p style="font-size: x-large;">And anime like that.But it actually depends on your age.</p>
 <p style="font-family: 'Courier New', Courier, monospace ; font-size: x-large;">Here are the age recommends</p>
   
-  <table style="font-size: x-large; color: black; background-color: yellow;">
+  <table style="font-size: x-large; color: black; background-color: yellow; width: 900px;">
     <tr>
       <th>Anime</th>
       <th>Age</th>
@@ -204,9 +374,9 @@ body {
   </table>
     
  <p style ="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: x-large;">Any way back to the point.Right now I am going to talk about peer pressure</p>
- <h2 style="background-color: red; width: 250px;">Peer Pressure</h2>
+ <h2 style="background-color: red; width: 250px; height: 1%;">Peer Pressure</h2>
 
-  <div style="width: 40%;"><p class="box" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin: 0%; padding: 0%; font-size: large;">Peer pressure is when you get influenced by someone, like example ecspeically your friend.Its good if they influence you to do some thing good.But if its something bad its not good at all.When I mean bad I mean like example smoking, drinking, having sexual parterns and the list goes on.So this are the ways to avoid it:by saing no to them, if they keep on insisting, go away from them and never hang out with them unless they prove that they have changed.Honestly speaking, for a point in my life I found it hard to avoid it.</p></div>
+  <div style="width: 30%;"><p class="box" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; margin: 0%; padding: 0%; font-size: large; align-items: center;">Peer pressure is when you get influenced by someone, like example ecspeically your friend.Its good if they influence you to do some thing good.But if its something bad its not good at all.When I mean bad I mean like example smoking, drinking, having sexual parterns and the list goes on.So this are the ways to avoid it:by saing no to them, if they keep on insisting, go away from them and never hang out with them unless they prove that they have changed.Honestly speaking, for a point in my life I found it hard to avoid it.</p></div>
   <p style="color: brown; font-size: x-large; background-color: aqua;">You back in the days we used to go to school trips.And the only reason we will be excited not because we will be going out, because we will be eating a lot snacks like this:</p>
 <img src="https://image.freepik.com/free-photo/unhealthy-sweets-set-sweets-badly-affecting-skin-body-shape-well-being_84130-3296.jpg" width="300px" height="300px">
 <p style="color: brown; font-size: x-large;">All going in <strong>ones</strong> tummy.We will be eating so much sugar, the next day almost half of the class wil not be there because they will be sick of stomach ache.</p>
@@ -214,11 +384,23 @@ body {
 <h2 style="color: black;">Chapter 4</h2>
 <p style="color: brown; font-size: x-large; font-family: 'Courier New', Courier, monospace; background-color: rgb(255, 183, 0);">Now i'm going to talk about the most important thing in life, which is not money but love.Many people will say money.I am not saying money is useless at all.But be be careful about money, as in the Bible it says "keep your love away from money".Talking about money beware of fake friends, friends that dont really like you but love the money or what you have not who you are.These are some of the ways to comfirm that they are real friends: 1.When they come over to you and first thing they do is to ask you for the thing they come for it is clear they are fake 2.Ok lets say they they greet and ask you for the thing they come tell them you are not allowed to use whatever they ask for anymore, give them two or three days they will stop coming to you.Be careful, use these things to people you are suspicious with.</p>
 <h2 style="color: black;">Chapter 5</h2>
-<p style="color: chartreuse; background-color: crimson; font-size: x-large; font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Life is a journey filled with a multitude of experiences, emotions, and challenges. It is a complex tapestry woven with moments of joy, sorrow, love, and growth. Each individual's life follows a unique path, shaped by their choices, circumstances, and interactions with the world around them. 
+<p style="color: chartreuse; background-color: crimson; font-size: x-large; font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: crimson;">Life is a journey filled with a multitude of experiences, emotions, and challenges. It is a complex tapestry woven with moments of joy, sorrow, love, and growth. Each individual's life follows a unique path, shaped by their choices, circumstances, and interactions with the world around them. 
  
   At times, life may present unexpected twists and turns, testing one's resilience and adaptability. It offers opportunities for personal development, self-discovery, and the forging of meaningful connections with others. Through the highs and lows, individuals navigate the complexities of existence, seeking purpose, fulfillment, and a sense of belonging. 
    
   As life unfolds, it often reveals the beauty of impermanence and the inevitability of change. People learn to embrace the present moment, cherish memories of the past, and look forward to the possibilities of the future. Ultimately, the journey of life is a profound and transformative experience that shapes who we are and how we perceive the world around us.</p>
+  <span style="background-color: #ff8a00;" class="gradient-text">Life is a journey, a series of experiences that shape and define who we are. It's a dynamic process filled with a mix of challenges and opportunities, victories and setbacks. From the moment we're born, we embark on a path of growth, learning, and self-discovery.
 
+    Education becomes a foundation, providing us with the tools to navigate an ever-evolving world. As we step into adulthood, we encounter the complexities of relationships, career choices, and personal development. Life is a continuous learning curve, a journey that often involves adapting to unexpected twists and turns.
+    
+    Work and career play a significant role, as we strive to find purpose and contribute to society. Along the way, we form connections with family, friends, and colleagues, building a network of support that sustains us through life's challenges.
+    
+    Health becomes a paramount concern, prompting a balance between physical well-being and mental resilience. The pursuit of happiness and fulfillment leads us to explore passions, hobbies, and personal interests.
+    
+    Life is also marked by moments of joy and sorrow, love and loss. Embracing these experiences with resilience and an open heart enables personal growth and the development of a rich tapestry of memories.
+    
+    In the grand scheme of things, life is a finite journey. Time moves forward, and as we reflect on the past, we recognize the importance of making meaningful contributions, leaving a positive impact on those around us.
+    
+    Ultimately, the trajectory of our lives is shaped by choices, experiences, and the connections we make along the way. It's a journey of self-discovery and continuous growth, where each day offers new opportunities to learn, connect, and create a meaningful existence.</span>
 </body>
 </html> 
