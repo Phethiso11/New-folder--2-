@@ -103,15 +103,8 @@ body {
             text-decoration: none;
             border-radius: 5px;
         }
-        ul {
-            list-style-type: none; /* Remove the default bullets */
-            padding: 0; /* Remove default padding */
-            display: flex;
-            justify-content: center; /* Center align the list items */
-        }
-        li {
-            margin: 0 10px; /* Add some spacing between list items */
-        }
+
+        
         
 /* Universal Styles */
 html {
@@ -159,11 +152,7 @@ p {
   background-color: #fff;
   font-size: 14px;
 
-}
 
-.header li {
-  display: inline-block;
-  padding: 10px;
 }
 
 .header a {
@@ -197,18 +186,7 @@ a.home {
 
 }
 
-/* Font Card Sections */
-.font-card {
-  padding: 10px 0 40px 0;
-  background-color: #ffffff;
-  text-align: center;
-}
 
-.font-card .creator {
-  padding: 10px 20px;
-  font-size: 16px;
-  
-}
 
 .sample {
   display: inline-block;  
@@ -254,11 +232,6 @@ a.home {
   border-radius: 10px;
 }
  
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: red; 
-  border-radius: 10px;
-}
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -282,17 +255,7 @@ a.home {
 .button:hover {
   background: linear-gradient(45deg, #ff1100, #4400ff);
 }
-@keyframes rainbow {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+
 
 .gradient-text {
   display: inline-block;
@@ -318,18 +281,61 @@ a.home {
 
 .scroll-box::-webkit-scrollbar-thumb {
   background-color: #3498db;
-  border-radius: 4px;
+  border-radius: 4px
+   #f2f2f2;
+
+.scroll-box::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+}
+color: white;
 }
 
 .scroll-box::-webkit-scrollbar-track {
   background-color: #f2f2f2;
 }
-hsl(198, 63%, 38%)
 
+ul{
+justify-content: center;
+text-align: center;
+align-items: center;
+list-style-type: none;
+}
+
+li{
+  text-align: center;
+}
+ul span{
+  font-size: 50px;
+}
+
+/* Define the keyframes for the glow effect */
+@keyframes glowing {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  }
+  50% {
+    color: #00bcd4;
+    text-shadow: 0 0 20px #00bcd4, 0 0 30px #00bcd4, 0 0 40px #00bcd4;
+  }
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  }
+}
+
+/* Apply the glow effect to the text */
+.glowing-text {
+  font-size: 24px; /* Adjust the font size as needed */
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Change the font family if needed */
+  color: #fff; /* Set the initial text color */
+  animation: glowing 2s infinite; /* Use the keyframes defined above */
+}
 
 
     </style>
-<body>
+
         </style>
         <head>
         
@@ -360,11 +366,11 @@ hsl(198, 63%, 38%)
 <img  src="https://robbreport.com/wp-content/uploads/2015/04/1_lambo1.jpg?w=1000" width="1000px" height="600px">
 <p style="color: black; font-size: x-large;">My point is why start when you are old not while you are still young.So when you are old you can contiue!</p>
 <p style="color: rgba(63, 0, 140, 0.7);font-size: x-large;">My brother is the one that made me realize this start when you are young!Like I am doing right know.</p>
-<ul style="font-size: x-large; align-self: center;">
-    <l style="text-align: center;">.software-engineer</li>
-    <li style="text-align: center;">.music artist</li>
-    <l style="text-align: center;">.soccer player</li>
-    </l>
+<ul style="font-size: x-large;">
+    <li><span>.</span>software-engineer</li>
+    <li><span>.</span>music artist</li>
+    <li><span>.</span>soccer player</li>
+    </ul>
 <p style="font-size: x-large;">And many other things!</p>  
 <p style="color: black; font-size: x-large;">Let me tell you my story.</p>
 
@@ -456,7 +462,9 @@ hsl(198, 63%, 38%)
     In the grand scheme of things, life is a finite journey. Time moves forward, and as we reflect on the past, we recognize the importance of making meaningful contributions, leaving a positive impact on those around us.
     
     Ultimately, the trajectory of our lives is shaped by choices, experiences, and the connections we make along the way. It's a journey of 
-<h2 style="color: black; font-size: larger;">Chapter 6</h2>
-<div style="width: 1000px; text-align: center; align-items: center; align-self: center;"  class="animated-text ">In life there are some people you should not trust.Do not accept sweets from strangers and when they say you should follow them, dont.These days people are dangerous, some steel kids for their organs and sell them, some sell the kids themselves and the list goes on.Children are sometimes abducted for the purpose of human trafficking.They may be forced into labor, sexual exploitation, or other forms of modern-day slavery. Traffickers often exploit vulnerable children for financial gain.</div>
+<h2 style="color: black; font-size: xx-large;">Chapter 6</h2>
+<div style="width: 900px;" class="glowing-text">In life there are some people you should not trust.Do not accept sweets from strangers and when they say you should follow them, dont.These days people are dangerous, some steel kids for their organs and sell them, some sell the kids themselves and the list goes on.Children are sometimes abducted for the purpose of human trafficking.They may be forced into labor, sexual exploitation, or other forms of modern-day slavery. Traffickers often exploit vulnerable children for financial gain.And human trafficking is illegal</div>
 </body>
 </html> 
+
+  
