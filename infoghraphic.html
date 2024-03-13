@@ -346,6 +346,42 @@
         letter-spacing: 1px;
         font-style: italic;
       }
+
+      .cool-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #ff5733; /* changed color to red */
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  .cool-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ff5733; /* changed color to red */
+    transition: all 0.3s;
+    z-index: -1;
+  }
+
+  .cool-button:hover::before {
+    left: 0;
+  }
+
+  .cool-button span {
+    position: relative;
+    z-index: 1;
+  }
     </style>
   </head>
   <body>
@@ -581,11 +617,10 @@
             <source src="c:\Users\Admin\Downloads\8GWVQUYRSWTOV8UH (2).mp4" type="video/ogg">
             Your browser does not support the video tag.
           </video>
-          <p style="font-size: x-large;color: palevioletred;"></p>
-        </body>
-        </html> 
-        
-          
+          <p style="font-size: x-large;color: palevioletred;">Brag about how early you wake up.Why are you bragging about how early you woke its better if you brag about do it late because its more healthy.</p>
+          <a href="#Chapter 1" class="cool-button"><span>Jump to chapter one</span></a>
+          <a href="#Chapter 2" class="cool-button"><span>Jump to chapter two</span></a>
+          <a href="#Chapter 3" class="cool-button"><span>Jump to chapter three</span></a> 
     </section>
   </body>
 </html>
