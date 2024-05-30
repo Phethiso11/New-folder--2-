@@ -1,0 +1,39 @@
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+.button-container {
+  display: flex;
+  gap: 20px; /* Adjust the gap between buttons */
+}
+
+.cool-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(45deg, #FF0000, #ffb86c);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cool-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.cool-button:active {
+  transform: scale(0.9);
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+

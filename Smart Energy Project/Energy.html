@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #443E3EE0;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            border: 2px solid black;
+            padding: 8px;
+            padding-right: 50px;
+            padding-left: 50px;
+            border-color: black;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        .usage-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .usage-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            text-align: center;
+            width: 30%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Energy Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+    <header>
+        <h1>Smart Energy Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <div class="button-container">
+                <li><button class="cool-button"><a cla style="color: white; font-size: xx-large;" href="Overview.html">Overview</a></button></li>
+
+                <li><button class="cool-button"><a style="color: white; font-size: xx-large;" href="usage.html" onclick="loadPage('usage.html')">Energy Usage</a></button></li>
+                <li><button class="cool-button"><a style="color: white; font-size: xx-large;" href="savings.html" onclick="loadPage('savings.html')">Savings</a></button></li>
+                <li><button class="cool-button"><a style="color: white;font-size: xx-large;" href="settings.html" onclick="loadPage('settings.html')">Settings</a></button></li>
+            </div>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>Welcome to the Smart Energy Dashboard. Here you can monitor and manage your energy consumption
+                efficiently.</p>
+        </section>
+        <section id="usage">
+            <h2>Energy Usage</h2>
+            <div class="usage-container">
+                <div class="usage-item">
+                    <h3>Current Usage</h3>
+                    <p>450 kWh</p>
+                </div>
+                <div class="usage-item">
+                    <h3>Average Usage</h3>
+                    <p>400 kWh</p>
+                </div>
+                <div class="usage-item">
+                    <h3>Peak Usage</h3>
+                    <p>600 kWh</p>
+                </div>
+            </div>
+        </section>
+        <section id="savings">
+            <h2>Savings</h2>
+            <p>This month you saved <strong>$30</strong> by using energy efficiently.</p>
+        </section>
+        <section id="settings">
+            <h2>Settings</h2>
+            <p>Configure your energy preferences and notifications here.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MMR Smart Energy Solutions</p>
+    </footer>
+
+</body>
+
+</html>
