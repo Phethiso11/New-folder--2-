@@ -13,7 +13,28 @@ header {
   padding: 15px 30px;
   font-size: 16px;
   color: #fff;
-  background: linear-gradient(45deg, #FF0000, #ffb86c);
+  background: linear-gradient(45deg, #ff0000, #ffb86c);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cool-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.cool-button:active {
+  transform: scale(0.9);
+}
+
+.cool-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff0000, #ffb86c);
   border: none;
   border-radius: 50px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -36,4 +57,3 @@ footer {
   padding: 1rem 0;
   text-align: center;
 }
-
