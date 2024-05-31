@@ -21,19 +21,24 @@
         height="30%"
         alt=""
       />
-      <br />
-      <hr />
-      <p
-        style="
-          font-size: xx-large;
-          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-            'Lucida Sans', Arial, sans-serif;
-          text-align: center;
-        "
-      >
-        Create account for
-        <strong style="color: green">Smart Energy Solutions</strong>
-      </p>
     </div>
+    <div>
+    <p
+      style="
+        font-size: xx-large;
+        font-family: 'TrebuchetMS' 'LucidaSansUnicode' 'Lucida Grande',
+          'Lucida Sans' Arial, sans-serif;
+        text-align: center;
+      "
+    >
+      Create account for
+      <strong style="color: green">Smart Energy Solutions</strong>
+      
+    </p>
+    <form action="/submit" method="POST">
+      <label for="input">Enter something:</label>
+      <input type="text" id="input" name="input" placeholder="Type here...">
+      <button type="submit">Submit</button>
+  </form>
   </body>
 </html>
