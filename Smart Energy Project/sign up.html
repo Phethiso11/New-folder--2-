@@ -1,84 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sign up</title>
-  <style>
-    .center-horizontal {
-      width: 50%;
-      margin: 0 auto;
-      border: 1px solid #000;
-      padding: 20px;
-      text-align: center;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - MMR Smart Energy Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .signup-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .logo {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .divider hr {
+            flex: 1;
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+        }
+
+        .divider span {
+            margin: 0 10px;
+            color: #aaa;
+        }
+
+        .google-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-color: white;
+            color: #555;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .google-btn img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .google-btn:hover {
+            background-color: #f4f4f4;
+        }
+
+        p {
+            margin-top: 10px;
+            color: #777;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="centered-container">
-    <img src="c:\Users\MASTERTECH\Downloads\MMR SMART ENERGY SOLUTIONS Logo - Original - 5000x5000.png" width="30%"
-      height="30%" alt="" />
-    <br />
-    <hr />
-    <p style="
-          font-size: xx-large;
-          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-            'Lucida Sans', Arial, sans-serif;
-          text-align: center;
-        ">
-      Create account for
-      <strong style="color: green">Smart Energy Solutions</strong>
-    </p>
-  </div>
-</body>
-=======
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>
-    <style>
-      .centered-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="centered-container">
-      <img
-        src="c:\Users\MASTERTECH\Downloads\MMR SMART ENERGY SOLUTIONS Logo - Original - 5000x5000.png"
-        width="30%"
-        height="30%"
-        alt=""
-      />
+    <div class="signup-container">
+        <h1 style="font-size: xx-large; color: #4CAF50;">MMR Smart Energy Solutions</h1>
+        <h1 style="font-size: medium;">Sign Up</h1>
+        <form id="signup-form">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div class="divider">
+            <hr><span>or continue with</span>
+            <hr>
+        </div>
+        <button class="google-btn">
+            <img src="https://th.bing.com/th/id/OIP.J_qfenzmeJx082eb5WeGyAHaHc?w=164&h=180&c=7&r=0&o=5&pid=1.7"
+                alt="Google Logo">Google
+        </button>
+        <p>Already have an account? <a href="Login.html">Login</a></p>
     </div>
-    <div>
-    <p
-      style="
-        font-size: xx-large;
-        font-family: 'TrebuchetMS' 'LucidaSansUnicode' 'Lucida Grande',
-          'Lucida Sans' Arial, sans-serif;
-        text-align: center;
-      "
-    >
-      Create account for
-      <strong style="color: green">Smart Energy Solutions</strong>
-      
-    </p>
-   <div class="input-container">
-    <form action="/submit" method="POST">
-      <input style="border-radius: 50px; height: 30px;" type="text" id="input" name="input" placeholder="Enter your email address..." />
-      <input style="border-radius: 50px; height: 30px;" type="text" id="input" name="input" placeholder="Enter your password..." />
-      <button type="submit">Submit</button>
-    </form>
-    </div>
-  </body>
-</html>
+    <script>
+        document.getElementById('signup-form').addEventListener('submit', async function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
 
+            try {
+                const response = await fetch('/signup', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ name, email, password })
+                });
+
+                if (response.ok) {
+                    alert('Sign up successful');
+                    window.location.href = 'Login.html';
+                } else {
+                    alert('Error: ' + (await response.text()));
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error signing up');
+            }
+        });
+    </script>
+</body>
 
 </html>
